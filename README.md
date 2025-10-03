@@ -28,16 +28,16 @@ dart pub global activate --source=path <path to this package>
 
 ```sh
 # Sample command
-$ pocketflow_website_chatbot sample
+$ website_chatbot sample
 
 # Sample command option
-$ pocketflow_website_chatbot sample --cyan
+$ website_chatbot sample --cyan
 
 # Show CLI version
-$ pocketflow_website_chatbot --version
+$ website_chatbot --version
 
 # Show usage help
-$ pocketflow_website_chatbot --help
+$ website_chatbot --help
 ```
 
 ## Running Tests with coverage 🧪

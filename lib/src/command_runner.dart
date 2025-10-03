@@ -17,12 +17,15 @@ const description = 'A Very Good Project created by Very Good CLI.';
 /// $ pocketflow_website_chatbot --version
 /// ```
 /// {@endtemplate}
-class PocketflowWebsiteChatbotCommandRunner extends CompletionCommandRunner<int> {
+class PocketflowWebsiteChatbotCommandRunner
+    extends CompletionCommandRunner<int> {
   /// {@macro pocketflow_website_chatbot_command_runner}
-  PocketflowWebsiteChatbotCommandRunner({Logger? logger, PubUpdater? pubUpdater})
-    : _logger = logger ?? Logger(),
-      _pubUpdater = pubUpdater ?? PubUpdater(),
-      super(executableName, description) {
+  PocketflowWebsiteChatbotCommandRunner({
+    Logger? logger,
+    PubUpdater? pubUpdater,
+  }) : _logger = logger ?? Logger(),
+       _pubUpdater = pubUpdater ?? PubUpdater(),
+       super(executableName, description) {
     // Add root options and flags
     argParser
       ..addFlag(
